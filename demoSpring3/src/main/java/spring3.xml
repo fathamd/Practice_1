@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+   
+   <bean id ="std" class ="com.qureshi.demoSpring3.Student"></bean>
+   <bean id ="std1" class ="com.qureshi.demoSpring3.Student">
+   <property name = "name" value ="fatha"></property>
+      <property name = "rollNum" value ="123"></property>
+         <property name = "branch" value ="CSE"></property>
+   </bean>
+   <bean id ="lib" class ="com.qureshi.demoSpring3.Library"></bean>
+   
+   <bean id ="Book" class ="com.qureshi.demoSpring3.Book">
+   <property name ="subject" value ="Network Analysis"></property>
+   </bean>
+   <bean id ="hostel" class="com.qureshi.demoSpring3.Hostel">
+   <constructor-arg value = "Block 1"></constructor-arg>
+   <constructor-arg value ="A Block"></constructor-arg>
+   </bean>
+   
+   
+ </beans>  
